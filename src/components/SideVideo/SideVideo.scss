@@ -1,0 +1,39 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/global" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 16px 24px 16px;
+
+  &__title {
+    font-size: 0.75rem;
+    line-height: 20px;
+    color: $silver;
+    padding: 0 0 24px 0;
+  }
+}
+
+.footer {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin: 36px 24px 36px 24px;
+  }
+
+  &__title {
+    font-size: 0.75rem;
+    line-height: 20px;
+    color: $silver;
+    padding: 0 0 24px 0;
+  }
+}
+
+.footer {
+  @include desktop {
+    display: inline-flex;
+    width: 30%;
+  }
+}
