@@ -14,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/video/:idFromParams" element={<HomePage />} />
           <Route path="posts" element={<PostsPage />} />
         </Routes>
         <Footer />
