@@ -1,11 +1,11 @@
 // const SERVER_URL = process.env.REACT_APP_SERVER_URL;
-
+import { NavLink } from "react-router-dom";
 const PostsPage = () => {
   return (
     <section className="posts-page">
-      <div>BULK</div>
+      <NavLink>BULK</NavLink>
       <div>OR</div>
-      <div>STRENGTH</div>
+      <NavLink>STRENGTH</NavLink>
     </section>
   );
 };

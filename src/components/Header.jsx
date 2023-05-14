@@ -18,7 +18,7 @@ const Header = () => {
             to="/"
             exact="true"
           >
-            Home
+            HOME PAGE
           </NavLink>
 
           <NavLink
@@ -27,10 +27,10 @@ const Header = () => {
                 ? "header__nav-link header__nav-link--active"
                 : "header__nav-link"
             }
-            to="/posts"
+            to="/salsa"
             exact="true"
           >
-            Posts
+            SAUCEY
           </NavLink>
         </nav>
       </div>

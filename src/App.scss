@@ -49,11 +49,19 @@ h3 {
     display: flex;
     gap: 1.5rem;
   }
+  &__nav-link {
+    text-decoration: none;
+  }
   &__nav-link--active {
     &:link,
     &:visited {
-      color: #e49273;
+      // color: #e49273;
       text-decoration: none;
+      color: #0af;
+      -webkit-text-stroke: 0.9px #fff;
+      text-shadow: 0 0 11px #e4f1e8, 0 0 2px #fff, 0 0 20px #fff,
+        0 0 42px #e4f1e8, 0 0 11px #0af, 0 0 17px #0af, 0 0 2px #0af,
+        0 0 15px #e4f1e8;
     }
   }
 }
@@ -195,7 +203,7 @@ h3 {
 }
 
 .button {
-  background-color: rgba(172, 4, 4, 0.819);
+  background-color: hsl(13, 63%, 48%);
   border: none;
   color: white;
   padding: 20px;
@@ -213,7 +221,7 @@ h3 {
 .button:hover {
   background-color: rgb(17, 14, 14);
   color: rgb(9, 253, 45);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+  // box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
   transition: all 0.9s ease;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem hsl(13, 63%, 48%),
     0 0 0.8rem hsl(13, 63%, 48%), 0 0 2.8rem hsl(13, 63%, 48%),
@@ -221,7 +229,7 @@ h3 {
 }
 
 .button:active {
-  box-shadow: 0 16px 48px rgba(0, 3.4, 5, 0.6), 0 4px 8px rgba(0, 0, 0, 1);
+  // box-shadow: 0 16px 48px rgba(0, 3.4, 5, 0.6), 0 4px 8px rgba(0, 0, 0, 1);
   color: rgb(73, 73, 95);
   margin: px 1px;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 3rem hsl(13, 63%, 48%),
@@ -316,8 +324,8 @@ h3 {
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
-      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0af,
+      0 0 80px #0af, 0 0 90px #0af, 0 0 100px #0af, 0 0 150px #0af;
   }
 
   20%,
@@ -493,10 +501,22 @@ input::after {
     &--button {
       border-radius: 15px;
       border: none;
-      background-color: black;
       color: white;
+      background-color: #2996cc;
       height: 36px;
-      position: relative;
+
+      text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0af,
+        0 0 80px #0af, 0 0 90px #0af, 0 0 100px #0af, 0 0 150px #0af;
+    }
+    &--button:hover {
+      transition: all 0.9s ease;
+      background-color: rgb(45, 130, 173);
+      box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #0af,
+        0 0 0.8rem #0af, 0 0 2.8rem #0af, inset 0 0 1.3rem 7px #0af;
+    }
+    &--button:active {
+      box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 3rem #0af, 0 0 4rem #0af,
+        0 0 5rem #0af, inset 0 0 1.3rem 8px #0af;
     }
   }
 
@@ -546,10 +566,11 @@ input::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 5px solid;
 
   background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png");
   &__title {
-    font-size: 2rem;
+    font-size: 2.6rem;
     line-height: 20px;
     color: black;
     padding: 0 0 24px 0;
@@ -573,6 +594,9 @@ input::after {
     flex-direction: column;
     justify-content: space-between;
     color: whitesmoke;
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0af,
+      0 0 80px #0af, 0 0 90px #0af, 0 0 100px #0af, 0 0 150px #0af;
+
     font-size: 0.8125rem;
     line-height: 18px;
     &--name {

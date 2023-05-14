@@ -13,9 +13,12 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="salsa" element={<HomePage />} />
           <Route path="/video/:idFromParams" element={<HomePage />} />
-          <Route path="posts" element={<PostsPage />} />
+          <Route path="/" element={<PostsPage />} />
+          {/* <Route path="/" element={<HomePage />} />
+          <Route path="/video/:idFromParams" element={<HomePage />} />
+          <Route path="posts" element={<PostsPage />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>
