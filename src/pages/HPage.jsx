@@ -2,8 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import WorkoutVideo from "../components/WorkoutVideo/WorkoutVideo";
 import MealPlanDay from "../components/MealPlanDay/MealPlanDay";
+import H from "../components/Hp/Hp";
 
-function Salsa() {
+function Hp() {
   // const [prompt, setPrompt] = useState(
   //   "I am a {age} year old {gender} needing a {product} at the best price"
   // );
@@ -418,7 +419,7 @@ function Salsa() {
       ) : null}
       {loading ? <div>loading</div> : null}
 
-      <WorkoutVideo />
+      <H />
     </>
   );
 }
@@ -433,4 +434,4 @@ function Salsa() {
 // };
 
 // export default HomePage;
-export default Salsa;
+export default Hp;

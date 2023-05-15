@@ -6,7 +6,7 @@ const Header = () => {
     <section className="header">
       <div className="header__bottom">
         <Link className="header__logo" to="/">
-          <p> Fit-Nez </p>
+          <p> FIT-NEZ </p>
         </Link>
         <nav className="header__nav">
           <NavLink
@@ -64,6 +64,17 @@ const Header = () => {
             exact="true"
           >
             SUPPORT
+          </NavLink>
+          <NavLink
+            className={(navData) =>
+              navData.isActive
+                ? "header__nav-link header__nav-link--active"
+                : "header__nav-link"
+            }
+            to="/h"
+            exact="true"
+          >
+            H
           </NavLink>
         </nav>
       </div>

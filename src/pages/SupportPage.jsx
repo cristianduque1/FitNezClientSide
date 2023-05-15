@@ -26,7 +26,7 @@ const SupportUsPage = () => {
           </li>
           <li>
             <h3>How can I track my order?</h3>
-            <p>Send us before and after pictures on a weekly basis.</p>
+            <p>By sending us before and after pictures on a weekly basis.</p>
           </li>
         </ul>
       </section>

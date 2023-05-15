@@ -56,7 +56,7 @@ function SideVideoNav({ video }) {
           url={video.video}
           // className="react-player"
           // id="react-play"
-          playing
+          // playing
           // controls
           volume={0}
           width="100%"

@@ -2,9 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "futura", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
 }
 a:link,
 a:visited {
@@ -41,7 +38,6 @@ h3 {
     &:visited {
       color: #2b4570;
       font-size: 1.25rem;
-      font-family: "Courier New", Courier, monospace;
       letter-spacing: 3px;
     }
   }
@@ -211,7 +207,7 @@ h3 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625rem;
   margin: 61px;
   cursor: pointer;
   border-radius: 30px;
@@ -268,21 +264,23 @@ h3 {
   -webkit-text-stroke: 0.9px #fff;
   text-shadow: 0 0 11px #e4f1e8, 0 0 2px #fff, 0 0 20px #fff, 0 0 42px #e4f1e8,
     0 0 11px #0af, 0 0 17px #0af, 0 0 2px #0af, 0 0 15px #e4f1e8;
+
   line-height: 23px;
 }
 
 .pa {
   font-family: "futura", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-  color: #ab0c1e;
-  background-color: #cb5e02;
+  // color: #ab0c1e;
+  // background-color: #cb5e02;
+  color: white;
+  background-color: black;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
-  // font-size: 57px;
+  // e: 57px;
   padding: 0.4em;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem hsl(13, 63%, 48%),
-    0 0 0.8rem hsl(13, 63%, 48%), 0 0 2.8rem hsl(13, 63%, 48%),
-    inset 0 0 1.3rem 7px hsl(13, 63%, 48%);
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem aqua, 0 0 0.8rem aqua,
+    0 0 2.8rem aqua, inset 0 0 1.3rem 7px aqua;
   width: 89%;
   margin: auto;
   // animation: flicker 1.5s infinite alternate;
@@ -468,6 +466,7 @@ input::after {
   &__formtitle {
     display: flex;
     justify-content: center;
+    background-color: aliceblue;
     &--text {
       font-size: 1rem;
       line-height: 20px;
@@ -482,6 +481,7 @@ input::after {
   &__formsection {
     display: flex;
     justify-content: center;
+    background-color: aliceblue;
     padding: 0 0 16px 0;
     &--div {
       padding: 0 16px 0 0;
@@ -505,7 +505,7 @@ input::after {
       border-radius: 15px;
       border: none;
       color: white;
-      background-color: #2996cc;
+      background-color: #1d3846;
       height: 36px;
       animation: flicker 1.5s infinite alternate;
       text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0af,
@@ -599,13 +599,17 @@ input::after {
     flex-direction: column;
     justify-content: space-between;
     color: whitesmoke;
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0af,
-      0 0 80px #0af, 0 0 90px #0af, 0 0 100px #0af, 0 0 150px #0af;
-
-    font-size: 0.8125rem;
+    text-decoration-line: overline;
+    font-size: 1.125rem;
     line-height: 18px;
     &--name {
+      font-size: 1.125rem;
       text-align: center;
+      text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0af,
+        0 0 80px #0af, 0 0 90px #0af, 0 0 100px #0af, 0 0 150px #0af;
+    }
+    &--title {
+      color: aqua;
     }
   }
 }
