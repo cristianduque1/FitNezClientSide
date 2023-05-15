@@ -3,7 +3,7 @@ import axios from "axios";
 import WorkoutVideo from "../components/WorkoutVideo/WorkoutVideo";
 import MealPlanDay from "../components/MealPlanDay/MealPlanDay";
 
-function MyComponent() {
+function Salsa() {
   // const [prompt, setPrompt] = useState(
   //   "I am a {age} year old {gender} needing a {product} at the best price"
   // );
@@ -425,4 +425,4 @@ function MyComponent() {
 // };
 
 // export default HomePage;
-export default MyComponent;
+export default Salsa;

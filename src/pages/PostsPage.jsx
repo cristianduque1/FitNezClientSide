@@ -3,9 +3,13 @@ import { NavLink } from "react-router-dom";
 const PostsPage = () => {
   return (
     <section className="posts-page">
-      <NavLink>BULK</NavLink>
+      <NavLink>
+        BULK<img src="" alt=""></img>
+      </NavLink>
       <div>OR</div>
-      <NavLink>STRENGTH</NavLink>
+      <NavLink>
+        STRENGTH <img src="" alt=""></img>
+      </NavLink>
     </section>
   );
 };

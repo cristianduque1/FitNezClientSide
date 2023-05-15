@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
-
 import PostsPage from "./pages/PostsPage";
+import HomePage from "./pages/HomePage";
+import AboutUsPage from "./pages/AboutUsPage";
+import ContactUsPage from "./pages/ContactUsPage";
+import SupportPage from "./pages/SupportPage";
 
 import "./App.scss";
 
@@ -13,12 +15,12 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path="/" element={<PostsPage />} />
           <Route path="salsa" element={<HomePage />} />
           <Route path="/video/:idFromParams" element={<HomePage />} />
-          <Route path="/" element={<PostsPage />} />
-          {/* <Route path="/" element={<HomePage />} />
-          <Route path="/video/:idFromParams" element={<HomePage />} />
-          <Route path="posts" element={<PostsPage />} /> */}
+          <Route path="aboutus" element={<AboutUsPage />} />
+          <Route path="contactus" element={<ContactUsPage />} />
+          <Route path="support" element={<SupportPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -25,7 +25,7 @@
 // export default SideVideoNav;
 
 // import "./SideVideoNav.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 import ReactPlayer from "react-player";
 
