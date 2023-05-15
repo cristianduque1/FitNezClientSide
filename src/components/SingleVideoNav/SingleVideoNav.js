@@ -10,7 +10,7 @@ const handleClickScroll = () => {
   }
 };
 
-function SideVideoNav({ video }) {
+function SingleVideoNav({ video }) {
   return (
     <div className="sidevideodiv" onClick={handleClickScroll}>
       <NavLink className="sidevideodiv__imagediv" to={`/video/${video.id}`}>
@@ -25,4 +25,4 @@ function SideVideoNav({ video }) {
   );
 }
 
-export default SideVideoNav;
+export default SingleVideoNav;

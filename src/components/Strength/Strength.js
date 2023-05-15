@@ -1,11 +1,10 @@
-import MainVideo from "../../components/MainVideo/MainVideo";
-
-import SideVideo from "../../components/SideVideo/SideVideo";
+import MainVideo from "../MainVideo/MainVideo";
+import StrengthVideos from "../StrengthVideos/StrengthVideos";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-function HomeVideoPlayer() {
+function Strength() {
   const { idFromParams } = useParams();
   const [videos, setVideos] = useState([]);
   const [videoo, setVideoo] = useState(null);
@@ -54,10 +53,10 @@ function HomeVideoPlayer() {
 
   return (
     <div className="BrainFlix-page">
-      <SideVideo videos={filteredVideos} />
+      <StrengthVideos videos={filteredVideos} />
       <MainVideo selectedVideoId={videoo} />
     </div>
   );
 }
 
-export default HomeVideoPlayer;
+export default Strength;

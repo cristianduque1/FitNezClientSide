@@ -1,10 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
-
 import MealPlanDay from "../components/MealPlanDay/MealPlanDay";
-import H from "../components/Hp/Hp";
+import Strength from "../components/Strength/Strength";
 
-function Hp() {
+function StrengthPage() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -144,9 +143,9 @@ function Hp() {
       ) : null}
       {loading ? <div>loading</div> : null}
 
-      <H />
+      <Strength />
     </>
   );
 }
 
-export default Hp;
+export default StrengthPage;

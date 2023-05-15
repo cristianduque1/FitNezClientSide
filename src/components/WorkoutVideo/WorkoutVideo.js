@@ -1,6 +1,5 @@
 import MainVideo from "../../components/MainVideo/MainVideo";
-
-import SideVideo from "../../components/SideVideo/SideVideo";
+import SideVideo from "../BulkVideo/BulkVideo";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";

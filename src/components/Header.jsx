@@ -26,7 +26,7 @@ const Header = () => {
                 ? "header__nav-link header__nav-link--active"
                 : "header__nav-link"
             }
-            to="/aboutus"
+            to="/about-us"
             exact="true"
           >
             ABOUT US
@@ -37,7 +37,7 @@ const Header = () => {
                 ? "header__nav-link header__nav-link--active"
                 : "header__nav-link"
             }
-            to="/contactus"
+            to="/contact-us"
             exact="true"
           >
             CONTACT US

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import Form from "../Form/Form";
+import Form from "../FeedBack/FeedBack";
+import FeedBack from "../FeedBack/FeedBack";
 function MainVideo({ selectedVideoId }) {
   const { video } = selectedVideoId;
 
@@ -14,7 +15,7 @@ function MainVideo({ selectedVideoId }) {
         width="100vw"
         height="100vh"
       />
-      <Form />
+      <FeedBack />
     </main>
   );
 }
