@@ -20,18 +20,6 @@ const Header = () => {
           >
             HOME PAGE
           </NavLink>
-
-          <NavLink
-            className={(navData) =>
-              navData.isActive
-                ? "header__nav-link header__nav-link--active"
-                : "header__nav-link"
-            }
-            to="/salsa"
-            exact="true"
-          >
-            SAUCEY
-          </NavLink>
           <NavLink
             className={(navData) =>
               navData.isActive
@@ -64,17 +52,6 @@ const Header = () => {
             exact="true"
           >
             SUPPORT
-          </NavLink>
-          <NavLink
-            className={(navData) =>
-              navData.isActive
-                ? "header__nav-link header__nav-link--active"
-                : "header__nav-link"
-            }
-            to="/h"
-            exact="true"
-          >
-            H
           </NavLink>
         </nav>
       </div>

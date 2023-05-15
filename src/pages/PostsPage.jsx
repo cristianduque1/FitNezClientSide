@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 const PostsPage = () => {
   return (
     <section className="posts-page">
-      <NavLink>
+      <NavLink to="/salsa" exact="true">
         BULK<img src="" alt=""></img>
       </NavLink>
       <div>OR</div>
-      <NavLink>
+      <NavLink to="/h" exact="true">
         STRENGTH <img src="" alt=""></img>
       </NavLink>
     </section>

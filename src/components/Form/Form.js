@@ -1,6 +1,4 @@
 import "./Form.scss";
-// import Mohan from "../../assets/Images/Mohan-muruge.jpg";
-// import icon from "../../assets/Images/Icons/add_comment.svg";
 
 function Form() {
   return (
