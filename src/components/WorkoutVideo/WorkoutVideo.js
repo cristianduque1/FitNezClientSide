@@ -1,5 +1,5 @@
 import MainVideo from "../../components/MainVideo/MainVideo";
-import SideVideo from "../BulkVideo/BulkVideo";
+import BulkVideo from "../BulkVideo/BulkVideo";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -53,7 +53,7 @@ function HomeVideoPlayer() {
 
   return (
     <div className="BrainFlix-page">
-      <SideVideo videos={filteredVideos} />
+      <BulkVideo videos={filteredVideos} />
       <MainVideo selectedVideoId={videoo} />
     </div>
   );

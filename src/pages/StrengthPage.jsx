@@ -126,7 +126,7 @@ function StrengthPage() {
           className="input"
           required
         />
-        <button type="submit" onClick={handleButtonClick} className="button">
+        <button onClick={handleButtonClick} className="button">
           PUSH FOR THE SPEACIAL MEAL SECRETS
         </button>
         {/* <div>

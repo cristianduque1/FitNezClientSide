@@ -20,8 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="bulking" element={<BulkPage />} />
           <Route path="/video/:idFromParams" element={<BulkPage />} />
-          <Route path="strengthening" element={<StrengthPage />} />
-          <Route path="/video/:idFromParams" element={<StrengthPage />} />
+          <Route path="strength" element={<StrengthPage />} />
+          <Route path="/vid/:idFromParams" element={<StrengthPage />} />
           <Route path="about-us" element={<AboutUsPage />} />
           <Route path="contact-us" element={<ContactUsPage />} />
           <Route path="support" element={<SupportPage />} />

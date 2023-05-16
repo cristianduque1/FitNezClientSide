@@ -60,6 +60,7 @@ const Header = () => {
       <div className="header__bottom">
         <Link className="header__logo" to="/">
           <p> FIT-NEZ </p>
+          <img src="" alt="" />
         </Link>
         <nav className="header__nav">
           <NavLink

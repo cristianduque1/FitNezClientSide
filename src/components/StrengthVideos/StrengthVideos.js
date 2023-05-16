@@ -1,5 +1,6 @@
 // import "./SideVideo.scss";
-import SideVideoNav from "../SingleVideoNav/SingleVideoNav";
+import SingleVideoNav from "../SingleVideoNav/SingleVideoNav";
+import SingleVideoNavI from "../SingleVideoNavI/SingleVideoNavI";
 
 function StrengthVideos({ videos }) {
   return (
@@ -7,7 +8,7 @@ function StrengthVideos({ videos }) {
       <h4 className="workout-video__title">STRENGTH TRAINING</h4>
 
       {videos.map((video) => (
-        <SideVideoNav key={video.id} video={video} />
+        <SingleVideoNavI key={video.id} video={video} />
       ))}
     </footer>
   );
