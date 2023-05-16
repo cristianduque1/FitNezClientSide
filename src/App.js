@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import PostsPage from "./pages/HomePage";
+
 import Home from "./pages/HomePage";
 import BulkPage from "./pages/BulkPage";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="bulking" element={<BulkPage />} />
           <Route path="/video/:idFromParams" element={<BulkPage />} />
-          <Route path="strengthing" element={<StrengthPage />} />
+          <Route path="strengthening" element={<StrengthPage />} />
           <Route path="/video/:idFromParams" element={<StrengthPage />} />
           <Route path="about-us" element={<AboutUsPage />} />
           <Route path="contact-us" element={<ContactUsPage />} />

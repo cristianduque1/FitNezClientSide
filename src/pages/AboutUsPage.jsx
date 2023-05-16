@@ -2,9 +2,9 @@ const AboutUsPage = () => {
   return (
     <main>
       <section class="hero">
-        <h1>About Fit-Nez</h1>
+        <h1>About FIT-NEZ</h1>
         <p>
-          At Fit-Nez, we believe that fitness is not just a goal to be achieved,
+          At FIT-NEZ, we believe that fitness is not just a goal to be achieved,
           but a way of life. Our program was founded in 2023 by Cristian D, a
           renowned fitness health coach with a passion for helping others live
           their best lives. Drawing on over 20 years of experience in the
@@ -18,7 +18,7 @@ const AboutUsPage = () => {
           they can achieve their goals and transform their lives. Whether you're
           looking to lose weight, build muscle, or just improve your overall
           health and wellness, we're here to help you every step of the way.
-          Join us today and discover the power of Fit-Nez for yourself!
+          Join us today and discover the power of FIT-NEZ for yourself!
         </p>
       </section>
 
@@ -36,7 +36,7 @@ const AboutUsPage = () => {
 
       <section class="mission">
         <h2>Our Mission</h2>
-        <p>
+        <p className="mission-p">
           Our mission is to help people of all ages and fitness levels achieve
           their health and fitness goals in a safe and effective way. To promote
           a holistic approach to fitness that includes not just physical

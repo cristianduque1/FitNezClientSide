@@ -92,7 +92,7 @@ function StrengthPage() {
 
   return (
     <>
-      <div className="videoplan-background">
+      <form className="videoplan-background">
         <label htmlFor="age" className="label">
           AGE
         </label>
@@ -102,6 +102,7 @@ function StrengthPage() {
           value={age}
           onChange={handleAgeChange}
           className="input"
+          required
         />
         <label htmlFor="gender" className="label">
           INCHES AROUND MID-SECTION
@@ -112,6 +113,7 @@ function StrengthPage() {
           value={gender}
           onChange={handleGenderChange}
           className="input"
+          required
         />
         <label htmlFor="product" className="label">
           WEIGHT
@@ -122,8 +124,9 @@ function StrengthPage() {
           value={product}
           onChange={handleProductChange}
           className="input"
+          required
         />
-        <button onClick={handleButtonClick} className="button">
+        <button type="submit" onClick={handleButtonClick} className="button">
           PUSH FOR THE SPEACIAL MEAL SECRETS
         </button>
         {/* <div>
@@ -133,7 +136,7 @@ function StrengthPage() {
             })}
           </p>
         </div> */}
-      </div>
+      </form>
       {result ? (
         <div className="pa">
           {result.map((day) => (
@@ -141,7 +144,7 @@ function StrengthPage() {
           ))}
         </div>
       ) : null}
-      {loading ? <div>loading</div> : null}
+      {loading ? <div className="load">Loading</div> : null}
 
       <Strength />
     </>

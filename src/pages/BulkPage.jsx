@@ -102,6 +102,7 @@ function BulkPage() {
           value={age}
           onChange={handleAgeChange}
           className="input"
+          required
         />
         <label htmlFor="gender" className="label">
           INCHES AROUND MID-SECTION
@@ -112,6 +113,7 @@ function BulkPage() {
           value={gender}
           onChange={handleGenderChange}
           className="input"
+          required
         />
         <label htmlFor="product" className="label">
           WEIGHT
@@ -122,6 +124,7 @@ function BulkPage() {
           value={product}
           onChange={handleProductChange}
           className="input"
+          required
         />
         <button onClick={handleButtonClick} className="button">
           PUSH FOR THE SPEACIAL MEAL SECRETS
@@ -141,7 +144,7 @@ function BulkPage() {
           ))}
         </div>
       ) : null}
-      {loading ? <div>loading</div> : null}
+      {loading ? <div className="load">loading</div> : null}
 
       <WorkoutVideo />
     </>
