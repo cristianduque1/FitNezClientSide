@@ -89,6 +89,9 @@ function BulkPage() {
     console.log(parsedAnswer);
 
     setLoading(false);
+    alert(
+      "Your personalized meal plan is ready. Please scroll to the top to view it."
+    );
     setResult(parsedAnswer);
   };
 
