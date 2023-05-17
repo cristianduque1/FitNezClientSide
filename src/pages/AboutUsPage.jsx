@@ -1,8 +1,14 @@
+import { Link } from "react-router-dom";
 const AboutUsPage = () => {
   return (
     <main>
-      <section class="hero">
-        <h1>About FIT-NEZ</h1>
+      <section className="hero">
+        <h1>
+          About{" "}
+          <Link className="fit-nezlink" to="/">
+            FIT-NEZ
+          </Link>
+        </h1>
         <p>
           At FIT-NEZ, we believe that fitness is not just a goal to be achieved,
           but a way of life. Our program was founded in 2023 by Cristian D, a

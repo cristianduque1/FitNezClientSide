@@ -3,7 +3,7 @@ import axios from "axios";
 import MealPlanDay from "../components/MealPlanDay/MealPlanDay";
 import Strength from "../components/Strength/Strength";
 
-function StrengthPage() {
+function LiftPage() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -89,6 +89,9 @@ function StrengthPage() {
     console.log(parsedAnswer);
 
     setLoading(false);
+    alert(
+      "Your personalized meal plan is ready. Please scroll to the top to view it."
+    );
     setResult(parsedAnswer);
   };
 
@@ -100,7 +103,7 @@ function StrengthPage() {
         </label>
         <input
           id="age"
-          type="text"
+          type="number"
           value={age}
           onChange={handleAgeChange}
           className="input"
@@ -111,7 +114,7 @@ function StrengthPage() {
         </label>
         <input
           id="gender"
-          type="text"
+          type="number"
           value={gender}
           onChange={handleGenderChange}
           className="input"
@@ -122,7 +125,7 @@ function StrengthPage() {
         </label>
         <input
           id="product"
-          type="text"
+          type="number"
           value={product}
           onChange={handleProductChange}
           className="input"
@@ -146,11 +149,15 @@ function StrengthPage() {
           ))}
         </div>
       ) : null}
-      {loading ? <div className="load">Loading</div> : null}
+      {loading ? (
+        <div className="load">
+          Generating Secret Meal Plan with Artificial Intelligence
+        </div>
+      ) : null}
 
       <Strength />
     </>
   );
 }
 
-export default StrengthPage;
+export default LiftPage;

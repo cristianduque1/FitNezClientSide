@@ -62,6 +62,7 @@ function BulkPage() {
   const API_KEY = process.env.REACT_APP_API_KEY;
   const fetchData = async (prompt) => {
     setLoading(true);
+
     const response = await axios.post(
       "https://api.openai.com/v1/completions",
 
@@ -103,7 +104,7 @@ function BulkPage() {
         </label>
         <input
           id="age"
-          type="text"
+          type="number"
           value={age}
           onChange={handleAgeChange}
           className="input"
@@ -114,7 +115,7 @@ function BulkPage() {
         </label>
         <input
           id="gender"
-          type="text"
+          type="number"
           value={gender}
           onChange={handleGenderChange}
           className="input"
@@ -125,7 +126,7 @@ function BulkPage() {
         </label>
         <input
           id="product"
-          type="text"
+          type="number"
           value={product}
           onChange={handleProductChange}
           className="input"
@@ -149,7 +150,11 @@ function BulkPage() {
           ))}
         </div>
       ) : null}
-      {loading ? <div className="load">loading</div> : null}
+      {loading ? (
+        <div className="load">
+          Generating Secret Meal Plan with Artificial Intelligence
+        </div>
+      ) : null}
 
       <WorkoutVideo />
     </>

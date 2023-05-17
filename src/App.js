@@ -7,7 +7,7 @@ import BulkPage from "./pages/BulkPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import SupportPage from "./pages/SupportPage";
-import StrengthPage from "./pages/StrengthPage";
+import LiftPage from "./pages/LiftPage";
 
 import "./App.scss";
 
@@ -20,11 +20,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/bulking" element={<BulkPage />} />
           <Route path="/video/:idFromParams" element={<BulkPage />} />
-          <Route path="/strength" element={<StrengthPage />} />
-          <Route path="/vid/:idFromParams" element={<StrengthPage />} />
-          <Route path="about-us" element={<AboutUsPage />} />
-          <Route path="contact-us" element={<ContactUsPage />} />
-          <Route path="support" element={<SupportPage />} />
+          <Route path="/strong" element={<LiftPage />} />
+          <Route path="/vid/:idFromParams" element={<LiftPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/support" element={<SupportPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

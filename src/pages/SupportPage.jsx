@@ -3,7 +3,9 @@ const SupportUsPage = () => {
     <main>
       <section class="hero">
         <h1>Support</h1>
-        <p>Need help with your FIT-NEZ product or order? We're here to help.</p>
+        <p>
+          Need help with your FIT-NEZ product or service? We're here to help.
+        </p>
       </section>
 
       <section class="faq">

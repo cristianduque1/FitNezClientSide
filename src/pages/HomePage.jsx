@@ -1,4 +1,3 @@
-// const SERVER_URL = process.env.REACT_APP_SERVER_URL;
 import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
@@ -44,18 +43,18 @@ const Home = () => {
             <img
               className="home-page__item-image square"
               src="https://e1.pxfuel.com/desktop-wallpaper/517/655/desktop-wallpaper-big-ramy-a-neeeeew-mr-olympia-2020-mr-olympia-big-ramy-thumbnail.jpg"
-              alt="Bulking"
+              alt="Bodybuider posing for the victory"
             ></img>
           </div>
         </NavLink>
         <div className="home-page__separator">OR</div>
-        <NavLink className="home-page__link" to="/strength" exact="true">
+        <NavLink className="home-page__link" to="/strong" exact="true">
           <div className="home-page__item">
             <span className="home-page__item-label">STRENGTH</span>
             <img
               className="home-page__item-image square"
               src="https://nypost.com/wp-content/uploads/sites/2/2020/04/halfthor-bjornsson-deadlift-record.jpg?quality=75&strip=all"
-              alt="Strengthening"
+              alt="Powerlifter barbells heavy"
             ></img>
           </div>
         </NavLink>
