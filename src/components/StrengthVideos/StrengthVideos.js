@@ -1,5 +1,5 @@
 // import "./SideVideo.scss";
-import SingleVideoNav from "../SingleVideoNav/SingleVideoNav";
+
 import SingleVideoNavI from "../SingleVideoNavI/SingleVideoNavI";
 
 function StrengthVideos({ videos }) {

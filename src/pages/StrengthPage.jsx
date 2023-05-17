@@ -63,16 +63,18 @@ function StrengthPage() {
   const fetchData = async (prompt) => {
     setLoading(true);
     const response = await axios.post(
-      "https://api.openai.com/v1/engines/text-davinci-003/completions",
+      // "https://api.openai.com/v1/engines/text-davinci-003/completions",
+      "https://api.openai.com/v1/completions",
       {
         prompt: prompt,
         temperature: 0.2,
         max_tokens: 2500,
+        model: "text-davinci-003",
       },
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${API_KEY}`,
         },
       }
     );
@@ -127,7 +129,7 @@ function StrengthPage() {
           required
         />
         <button onClick={handleButtonClick} className="button">
-          PUSH FOR THE SPEACIAL MEAL SECRETS
+          PUSH FOR THE SPEACIAL MEALS
         </button>
         {/* <div>
           <p className="pa">

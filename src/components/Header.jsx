@@ -1,5 +1,5 @@
 // NavLink component allows us to define an active CSS class for the page we are currently on
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -58,22 +58,15 @@ const Header = () => {
     // </section>
     <section className="header">
       <div className="header__bottom">
-        <Link className="header__logo" to="/">
-          <p> FIT-NEZ </p>
-          <img src="" alt="" />
-        </Link>
+        <NavLink className="header__logo" to="/">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/611/758/324/man-silhouette-fitness-wallpaper-preview.jpg"
+            className="header__logo--image"
+            alt=""
+          />
+          <p className="header__logo--text"> FIT-NEZ </p>
+        </NavLink>
         <nav className="header__nav">
-          <NavLink
-            className={(navData) =>
-              navData.isActive
-                ? "header__nav-link header__nav-link--active"
-                : "header__nav-link"
-            }
-            to="/"
-            exact="true"
-          >
-            HOME PAGE
-          </NavLink>
           <NavLink
             className={(navData) =>
               navData.isActive
