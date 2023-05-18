@@ -1,4 +1,3 @@
-// import "./SideVideo.scss";
 import SingleVideoNav from "../SingleVideoNav/SingleVideoNav";
 
 function BulkVideo({ videos }) {
