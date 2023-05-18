@@ -1,4 +1,3 @@
-// NavLink component allows us to define an active CSS class for the page we are currently on
 import { Link } from "react-router-dom";
 
 const Footer = () => {

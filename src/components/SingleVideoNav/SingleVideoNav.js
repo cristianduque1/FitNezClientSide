@@ -1,4 +1,3 @@
-// import "./SideVideoNav.scss";
 import { NavLink } from "react-router-dom";
 import React from "react";
 import ReactPlayer from "react-player";

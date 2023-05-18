@@ -1,22 +1,20 @@
 const SupportUsPage = () => {
   return (
     <main>
-      <section class="hero">
+      <section className="hero">
         <h1>Support</h1>
         <p>
           Need help with your FIT-NEZ product or service? We're here to help.
         </p>
       </section>
 
-      <section class="faq">
+      <section className="faq">
         <h2>Frequently Asked Questions</h2>
 
         <ul>
           <li>
             <h3>How do I place an order?</h3>
             <p>
-              {/* To place an order, simply browse our products and contact us we
-              will take it from there. */}
               Thank you for considering our services. Placing an order with us
               is a straightforward and hassle-free process. Here's a concise
               guide to assist you: Browse our extensive selection of products
@@ -60,8 +58,6 @@ const SupportUsPage = () => {
           <li>
             <h3>What is your return policy?</h3>
             <p>
-              {/* There is no return policy you recieve a portion of your deposit if
-              we see fit thru the results of the transformation you make. */}
               We appreciate your interest in our services. Our approach to
               returns and refunds is tailored to the unique nature of the
               transformation process we undertake. Please note that we do not
@@ -88,7 +84,6 @@ const SupportUsPage = () => {
           <li>
             <h3>How can I track my order?</h3>
             <p>
-              {/* By sending us before and after pictures on a weekly basis. */}
               Thank you for your input. To ensure transparency and a fair
               assessment of the transformation process, we kindly request that
               you provide us with weekly progress updates in the form of before

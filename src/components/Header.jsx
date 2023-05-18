@@ -1,4 +1,3 @@
-// NavLink component allows us to define an active CSS class for the page we are currently on
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -8,7 +7,6 @@ const Header = () => {
         <NavLink className="header__logo" to="/">
           <img
             src="https://c4.wallpaperflare.com/wallpaper/611/758/324/man-silhouette-fitness-wallpaper-preview.jpg"
-            // src="https://cdn3.iconfinder.com/data/icons/shoulder-and-neck-muscle-building-exercises/237/shoulder-neck-exercises-019-1024.png"
             className="header__logo--image"
             alt=""
           />

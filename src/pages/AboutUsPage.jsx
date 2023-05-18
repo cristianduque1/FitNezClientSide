@@ -28,7 +28,7 @@ const AboutUsPage = () => {
         </p>
       </section>
 
-      <section class="history">
+      <section className="history">
         <h2>Our History</h2>
         <p>
           Founded in 2023 by Cristian D, a renowned fitness health coach with
@@ -40,7 +40,7 @@ const AboutUsPage = () => {
         </p>
       </section>
 
-      <section class="mission">
+      <section className="mission">
         <h2>Our Mission</h2>
         <p className="mission-p">
           Our mission is to help people of all ages and fitness levels achieve
@@ -52,7 +52,7 @@ const AboutUsPage = () => {
         </p>
       </section>
 
-      <section class="team">
+      <section className="team">
         <h2>Our Team</h2>
         <p>
           Comprised of a diverse group of fitness professionals, including

@@ -8,16 +8,6 @@ function LiftPage() {
   const [loading, setLoading] = useState(false);
 
   const [prompt] = useState(
-    // "Consider yourself a veteran health weight loss fitness expert in the feild and give me a week worth of a meal plan with a grocery list for a {age} year old {product} pound male with a {gender} inch waist who wants to get bulky including creams for skin treatment that are all organic and healthy in less than 1400 words."
-    // `task:
-    // ***
-    // Consider yourself a veteran health weight loss fitness expert in the field and give me a week worth of a meal plan with a grocery list for a 54 year old 250 pound male with a 38 inch waist who wants to get bulky including creams for skin treatment that are all organic and healthy in less than 1400 words.
-    // ***
-    // Format:
-    // ***
-    // Write in a code block to look like json format  and put grocery into arrays within the recipe objects and put each object as an index of the data array.
-    // ***`
-
     `task:
     ***
     Consider yourself a veteran health weight loss fitness expert and give me a 7 day meal plan with an ingredient list for each meal for a {age} year old {product} pound male with a {gender} inch waist who wants to get bulky.
@@ -63,7 +53,6 @@ function LiftPage() {
   const fetchData = async (prompt) => {
     setLoading(true);
     const response = await axios.post(
-      // "https://api.openai.com/v1/engines/text-davinci-003/completions",
       "https://api.openai.com/v1/completions",
       {
         prompt: prompt,
@@ -97,7 +86,7 @@ function LiftPage() {
 
   return (
     <>
-      <form className="videoplan-background">
+      <div className="videoplan-background">
         <label htmlFor="age" className="label">
           AGE
         </label>
@@ -134,14 +123,7 @@ function LiftPage() {
         <button onClick={handleButtonClick} className="button">
           PUSH FOR THE SPEACIAL MEALS
         </button>
-        {/* <div>
-          <p className="pa">
-            {result.map((day) => {
-              return day.day;
-            })}
-          </p>
-        </div> */}
-      </form>
+      </div>
       {result ? (
         <div className="pa">
           {result.map((day) => (

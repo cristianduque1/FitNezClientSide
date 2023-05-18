@@ -1,13 +1,1 @@
-@use "../../styles/partials/variables" as *;
-@use "../../styles/partials/typography" as *;
-@use "../../styles/partials/mixins" as *;
-@use "../../styles/partials/global" as *;
 
-.main {
-  &__video {
-    background-color: $brainflix-darkblack;
-    max-height: 584px;
-    width: 100vw;
-    aspect-ratio: 16/9;
-  }
-}
